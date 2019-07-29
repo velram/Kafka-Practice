@@ -9,8 +9,7 @@ import java.util.Properties;
 
 public class KafkaProducerDemo {
 
-    private static final  String BOOTSTRAP_SERVERS = "localhost:9092";
-    private static final String MESSAGE_TO_SEND = "Message from Java code - Kafka (API) - 2";
+    private static final String MESSAGE_TO_SEND = "Message from Java code - Kafka (API) - 3";
 
     public static void main(String[] args) {
 
@@ -28,7 +27,7 @@ public class KafkaProducerDemo {
 
         // Create Kafka record
 
-        ProducerRecord<String,String> producerRecord = new ProducerRecord<String, String>("first-topic",MESSAGE_TO_SEND);
+        ProducerRecord<String,String> producerRecord = new ProducerRecord<String, String>(KafkaDemoProducerConstants.KAFKA_TOPIC_NAME,MESSAGE_TO_SEND);
 
         // Send the data
         demoKafkaProducer.send(producerRecord);
@@ -45,7 +44,7 @@ public class KafkaProducerDemo {
      * @param producerProperties
      */
     private static void populateProducerProperties(Properties producerProperties) {
-        producerProperties.setProperty(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, BOOTSTRAP_SERVERS);
+        producerProperties.setProperty(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, KafkaDemoProducerConstants.BOOTSTRAP_SERVERS);
         producerProperties.setProperty(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
         producerProperties.setProperty(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
     }
