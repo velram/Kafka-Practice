@@ -5,34 +5,23 @@ import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
 import org.apache.kafka.common.serialization.StringDeserializer;
-import org.apache.kafka.common.serialization.StringSerializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.time.Duration;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.Properties;
 
 public class KafkaConsumerDemo {
+
+    private static final String KAFKA_CONSUMER_GROUP_ID = "my-second-application-group";
 
     public static void main(String[] args) {
 
         Logger loggerObject = LoggerFactory.getLogger(KafkaConsumerDemo.class.getName());
 
         // Create properties
-        Properties kafkaConsumerProperties = new Properties();
-
-        kafkaConsumerProperties.setProperty(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG,
-                KafkaDemoProducerConstants.BOOTSTRAP_SERVERS);
-        kafkaConsumerProperties.setProperty(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG,
-                StringDeserializer.class.getName());
-        kafkaConsumerProperties.setProperty(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG,
-                StringDeserializer.class.getName());
-        kafkaConsumerProperties.setProperty(ConsumerConfig.GROUP_ID_CONFIG,
-                KafkaDemoProducerConstants.KAFKA_CONSUMER_GROUP_ID);
-        kafkaConsumerProperties.setProperty(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG,
-                KafkaDemoProducerConstants.KAFKA_CONSUMER_OFFSET_AUTO_REST_MODE);
+        Properties kafkaConsumerProperties = KafkaConsumerDemoUtils.fetchKafkaConsumerProperties();
 
         //Create consumer
         KafkaConsumer<String,String> simpleKafkaConsumer = new KafkaConsumer<String, String>
@@ -53,11 +42,29 @@ public class KafkaConsumerDemo {
                         "Value : " + consumerRecord.value() + "\n");
                 loggerObject.info("Topic : " + consumerRecord.topic() + "\n" +
                                   "Partition : " + consumerRecord.partition() + "\n" +
-                                  "Offset : " + consumerRecord.offset() + "\n" +
-                                  "Timestamp : " + consumerRecord.timestamp() + "\n"
+                                  "Timestamp : " + consumerRecord.timestamp() + "\n" +
+                                  "Offset : " + consumerRecord.offset() + "\n"
                 );
             }
         }
 
     }
+
+    public static Properties fetchKafkaConsumerGroupProperties() {
+        Properties kafkaConsumerGroupProperties = new Properties();
+        kafkaConsumerGroupProperties.setProperty(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG,
+                KafkaDemoProducerConstants.BOOTSTRAP_SERVERS);
+        kafkaConsumerGroupProperties.setProperty(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG,
+                StringDeserializer.class.getName());
+        kafkaConsumerGroupProperties.setProperty(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG,
+                StringDeserializer.class.getName());
+        kafkaConsumerGroupProperties.setProperty(ConsumerConfig.GROUP_ID_CONFIG,
+                KAFKA_CONSUMER_GROUP_ID);
+        kafkaConsumerGroupProperties.setProperty(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG,
+                KafkaDemoProducerConstants.KAFKA_CONSUMER_OFFSET_AUTO_REST_MODE);
+
+        return kafkaConsumerGroupProperties;
+    }
+
+
 }

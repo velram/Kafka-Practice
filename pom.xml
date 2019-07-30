@@ -6,6 +6,7 @@
 
     <groupId>com.kafka.practice</groupId>
     <artifactId>Kafka-Practice</artifactId>
+    <packaging>pom</packaging>
     <version>1.0</version>
     <build>
         <plugins>
@@ -19,6 +20,9 @@
             </plugin>
         </plugins>
     </build>
+    <modules>
+        <module>Kafka-elastic-search-practice</module>
+    </modules>
 
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.apache.kafka/kafka-clients -->
@@ -41,6 +45,12 @@
             <artifactId>slf4j-jdk14</artifactId>
             <version>1.7.26</version>
         </dependency>
+
+            <dependency>
+                <groupId>com.twitter</groupId>
+                <artifactId>hbc-core</artifactId> <!-- or hbc-twitter4j -->
+                <version>2.2.0</version> <!-- or whatever the latest version is -->
+            </dependency>
 
     </dependencies>
 

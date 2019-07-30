@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a56c62a8-f3b5-4dfe-b056-fd97d800c93e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/practice/kafka/KafkaDemoProducerConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/practice/kafka/KafkaDemoProducerConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/practice/kafka/KafkaConsumerDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/practice/kafka/KafkaConsumerDemo.java" afterDir="false" />
     </list>
     <list id="e251dc2b-348d-477d-b74e-a548b734b927" name="populateKafkaProducer" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/Kafka-elastic-search-practice/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,37 +26,43 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/practice/kafka/KafkaProducerDemoWithKeys.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
+            <state relative-caret-position="363">
               <caret line="61" selection-start-line="61" selection-end-line="61" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#713#729#0" expanded="true" />
                 <element signature="e#1050#1066#0" expanded="true" />
-                <element signature="e#1079#1258#0" expanded="true" />
-                <element signature="e#1257#1258#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/practice/kafka/KafkaConsumerDemo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="51" column="74" lean-forward="true" selection-start-line="51" selection-start-column="74" selection-end-line="51" selection-end-column="74" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1333#1349#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/practice/kafka/KafkaDemoProducerConstants.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/practice/kafka/KafkaConsumerDemo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="867">
+              <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/practice/kafka/twitter/TwitterKafkaProducer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/practice/kafka/twitter/TwitterConfig.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" column="47" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="47" />
+              <caret line="7" column="99" selection-start-line="7" selection-start-column="99" selection-end-line="7" selection-end-column="99" />
             </state>
           </provider>
         </entry>
@@ -64,10 +72,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>second-co</find>
+      <find>consumer-group</find>
+      <find>second-consumer</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -82,9 +97,15 @@
         <option value="$PROJECT_DIR$/src/main/java/com/practice/kafka/KafkaProducerDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/practice/kafka/KafkaProducerWithCallbackDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/practice/kafka/KafkaProducerDemoWithKeys.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/practice/kafka/KafkaDemoProducerConstants.java" />
+        <option value="$PROJECT_DIR$/Kafka-elastic-search-practice/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/practice/kafka/KafkaConsumerUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/practice/kafka/KafkaConsumerDemoUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/practice/kafka/KafkaConsumerDemoConstants.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/practice/kafka/KafkaConsumerDemo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/practice/kafka/KafkaConsumerDemoGroups.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/practice/kafka/twitter/TwitterConfig.java" />
       </list>
     </option>
   </component>
@@ -172,7 +193,13 @@
             </path>
             <path>
               <item name="Kafka-Practice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Kafka-Practice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="practice" type="462c0819:PsiDirectoryNode" />
+              <item name="kafka" type="462c0819:PsiDirectoryNode" />
+              <item name="twitter" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -203,14 +230,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.KafkaConsumerDemo">
-    <configuration name="HelloWorldDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.practice.java.HelloWorldDemo" />
-      <module name="Kafka-Practice" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.KafkaConsumerDemoGroups">
     <configuration name="Kafka-practice" type="Application" factoryName="Application" show_console_on_std_err="true" show_console_on_std_out="true">
       <output_file path="$PROJECT_DIR$/../Kafka-practice-logs" is_save="true" />
       <log_file alias="Kafka-practice.log" path="$PROJECT_DIR$/../Kafka-practice-logs" />
@@ -222,6 +242,19 @@
     </configuration>
     <configuration name="KafkaConsumerDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.practice.kafka.KafkaConsumerDemo" />
+      <module name="Kafka-Practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.practice.kafka.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KafkaConsumerDemoGroups" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.practice.kafka.KafkaConsumerDemoGroups" />
       <module name="Kafka-Practice" />
       <extension name="coverage">
         <pattern>
@@ -275,19 +308,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.Kafka-practice" />
-      <item itemvalue="Application.HelloWorldDemo" />
       <item itemvalue="Application.KafkaProducerDemo" />
       <item itemvalue="Application.KafkaProducerWithCallbackDemo" />
       <item itemvalue="Application.KafkaProducerDemoWithKeys" />
       <item itemvalue="Application.KafkaConsumerDemo" />
+      <item itemvalue="Application.KafkaConsumerDemoGroups" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.KafkaConsumerDemoGroups" />
         <item itemvalue="Application.KafkaConsumerDemo" />
         <item itemvalue="Application.KafkaProducerDemoWithKeys" />
         <item itemvalue="Application.KafkaProducerWithCallbackDemo" />
         <item itemvalue="Application.KafkaProducerDemo" />
-        <item itemvalue="Application.HelloWorldDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -302,12 +335,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1564387735768</updated>
-      <workItem from="1564387736931" duration="9354000" />
+      <workItem from="1564387736931" duration="16433000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9354000" />
+    <option name="totallyTimeSpent" value="16433000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -327,7 +360,7 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Messages" weight="0.32936078" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
@@ -337,14 +370,14 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.36511377" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.4409534" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
       <window_info anchor="right" id="Palette" />
       <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" visible="true" weight="0.32995737" />
+      <window_info anchor="right" id="Maven" visible="true" weight="0.14925373" />
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="right" id="Palette&#9;" />
       <window_info anchor="right" id="Database" />
@@ -394,27 +427,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="10" lean-forward="true" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/practice/kafka/KafkaProducerDemoWithKeys.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#713#729#0" expanded="true" />
-            <element signature="e#1050#1066#0" expanded="true" />
-            <element signature="e#1079#1258#0" expanded="true" />
-            <element signature="e#1257#1258#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-clients/2.3.0/kafka-clients-2.3.0.jar!/org/apache/kafka/clients/consumer/ConsumerConfig.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -422,21 +434,88 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Kafka-elastic-search-practice/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/practice/kafka/KafkaConsumerDemoConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="55" selection-start-line="2" selection-start-column="55" selection-end-line="2" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/practice/kafka/KafkaDemoProducerConstants.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="47" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="47" />
+          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="44" column="48" lean-forward="true" selection-start-line="44" selection-start-column="48" selection-end-line="44" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/practice/kafka/KafkaConsumerDemoGroups.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#877#893#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/practice/kafka/KafkaConsumerDemoUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/practice/kafka/KafkaProducerDemoWithKeys.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#713#729#0" expanded="true" />
+            <element signature="e#1050#1066#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/practice/kafka/KafkaConsumerDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="51" column="74" lean-forward="true" selection-start-line="51" selection-start-column="74" selection-end-line="51" selection-end-column="74" />
+        <state relative-caret-position="867">
+          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1333#1349#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/practice/kafka/twitter/TwitterConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="99" selection-start-line="7" selection-start-column="99" selection-end-line="7" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/practice/kafka/twitter/TwitterKafkaProducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
