@@ -21,7 +21,9 @@ public class KafkaConsumerDemo {
         Logger loggerObject = LoggerFactory.getLogger(KafkaConsumerDemo.class.getName());
 
         // Create properties
-        Properties kafkaConsumerProperties = KafkaConsumerDemoUtils.fetchKafkaConsumerProperties();
+        Properties kafkaConsumerProperties = KafkaConsumerDemoUtils.fetchKafkaConsumerProperties(
+                                             KafkaDemoProducerConstants.KAFKA_CONSUMER_GROUP_ID,
+                                             KafkaDemoProducerConstants.KAFKA_CONSUMER_OFFSET_AUTO_REST_MODE);
 
         //Create consumer
         KafkaConsumer<String,String> simpleKafkaConsumer = new KafkaConsumer<String, String>

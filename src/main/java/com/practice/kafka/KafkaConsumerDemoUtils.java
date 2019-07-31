@@ -12,7 +12,7 @@ import java.util.Properties;
  */
 public class KafkaConsumerDemoUtils {
 
-    public static Properties fetchKafkaConsumerProperties() {
+    public static Properties fetchKafkaConsumerProperties(String kafkaConsumerGroupId, String autoOffsetResetMode) {
         Properties kafkaConsumerProperties = new Properties();
         kafkaConsumerProperties.setProperty(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG,
                 KafkaDemoProducerConstants.BOOTSTRAP_SERVERS);
@@ -21,9 +21,9 @@ public class KafkaConsumerDemoUtils {
         kafkaConsumerProperties.setProperty(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG,
                 StringDeserializer.class.getName());
         kafkaConsumerProperties.setProperty(ConsumerConfig.GROUP_ID_CONFIG,
-                KafkaDemoProducerConstants.KAFKA_CONSUMER_GROUP_ID);
+                kafkaConsumerGroupId);
         kafkaConsumerProperties.setProperty(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG,
-                KafkaDemoProducerConstants.KAFKA_CONSUMER_OFFSET_AUTO_REST_MODE);
+                autoOffsetResetMode);
 
         return kafkaConsumerProperties;
     }
